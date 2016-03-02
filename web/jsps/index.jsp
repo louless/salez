@@ -13,9 +13,11 @@
         <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/style.css" type="text/css"/>
     </head>
     <body>
-        <h1>Лучшие скидки и промо акции в одном месте!</h1>
-        
-        <%@include file="../partjsp/mainMenu.jsp"%> 
+        <!--<h1>Лучшие скидки и промо акции в одном месте!</h1>-->
+        <h1>Совсем скоро тут будет новый сайт! Мы уже работаем... </br>
+        По всем вопросам <a href="mailto:lvg135@yandex.ru">lvg135@yandex.ru</a>
+        </h1>
+        <%--<%@include file="../partjsp/mainMenu.jsp"%>--%> 
         
         <div class="clear-float"></div>
         <%@include file="../partjsp/bottom.jsp"%> 
