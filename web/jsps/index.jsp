@@ -14,10 +14,13 @@
     </head>
     <body>
         <%@include file="../partjsp/topmenu.jsp" %>
-        
+
         <div class="center">
-            <h1>Лучшие скидки и промо акции в одном месте!
+            <h1>Лучшие скидки и промо-акции в одном месте!
             </h1>
+            <h2>
+                Недавно поступившие
+            </h2>
         </div>
         <%--<%@include file="../partjsp/mainMenu.jsp"%>--%> 
 
@@ -29,30 +32,45 @@
                 </thead>
                 <tbody>                   
                     <tr>
+                        <td><a href="http://getnet.site" target="_blank">
+                                <img src="${pageContext.request.contextPath}/IMG.jpg" width="100%">
+                            </a>
+                        </td>
 
                         <td><a href="http://getnet.site" target="_blank">
-                                <img src="./IMG.jpg" width="100%"> </a></td>
-
-                        <td><a href="http://getnet.site" target="_blank">
-                                <img src="./getImage.jpg" width="100%"> </a></td>
+                                <img src="${pageContext.request.contextPath}/getImage.jpg" width="100%"> 
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td><a href="http://getnet.site" target="_blank">
-                                <img src="./getImage.jpg" width="100%"> </a></td>
+                                <img src="${pageContext.request.contextPath}/getImage.jpg" width="100%">
+                            </a>
+                        </td>
                         <td><a href="http://getnet.site" target="_blank">
-                                <img src="./getImage.jpg" width="100%"> </a></td>
+                                <img src="${pageContext.request.contextPath}/getImage.jpg" width="100%"> 
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td><a href="http://getnet.site" target="_blank">
-                                <img src="./getImage.jpg" width="100%"> </a></td>
+                                <img src="${pageContext.request.contextPath}/getImage.jpg" width="100%"> 
+                            </a>
+                        </td>
                         <td><a href="http://getnet.site" target="_blank" >
-                                <img src="./getImage.jpg" width="100%"></a></td>
+                                <img src="${pageContext.request.contextPath}/getImage.jpg" width="100%">
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td><a href="http://getnet.site" target="_blank">
-                                <img src="./getImage.jpg" width="100%"></a></td>
+                                <img src="${pageContext.request.contextPath}/getImage.jpg" width="100%">
+                            </a>
+                        </td>
                         <td><a href="http://getnet.site" target="_blank">
-                                <img src="./getImage.jpg" width="100%"></a></td>
+                                <img src="${pageContext.request.contextPath}/getImage.jpg" width="100%">
+                            </a>
+                        </td>
                     </tr>                    
 
                 </tbody>

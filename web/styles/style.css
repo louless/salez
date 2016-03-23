@@ -8,8 +8,9 @@ and open the template in the editor.
     Author     : VGLukin
 */
 body{
-    background-color: #f0f7f7;
-
+    /*background-color: #f0f7f7;*/
+    /*font-family: Verdana, Arial, sans-serif;*/
+    background-image: url(../images/background.bmp);
 }
 
 th {
@@ -42,6 +43,10 @@ a:link:hover {
 
 h1{
     font-size: 30px;
+}
+
+h2{
+    font-family: Verdana, Arial, sans-serif;
 }
 
 /* ///////////////////////////////////////////////////////
@@ -101,6 +106,7 @@ h1{
     height: 300px;
     border-style: double; 
     background-color: black;
+    border-color: #f5fb09;
 }
 
 
