@@ -22,10 +22,10 @@
                 Недавно поступившие
             </h2>
         </div>
-        <%--<%@include file="../partjsp/mainMenu.jsp"%>--%> 
+        
+        <%@include file="../partjsp/mainMenu.jsp"%> 
 
         <div class="mainframe">
-
             <table>
                 <thead>
 

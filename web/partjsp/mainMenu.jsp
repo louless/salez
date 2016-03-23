@@ -11,10 +11,11 @@
 <html>
     <body> 
     <!--<script type="text/javascript" src="${pageContext.request.contextPath}/lib/jquery.js"></script>-->  
-        <ul id="mainmenu"> 
-            <li value="1">  <a href="#"> Спортзал      </a></li>
-            <li value="2">  <a href="#"> Кино          </a></li>
-            <li value="3">  <a href="#"> Магазины      </a></li> 
+        <ul id="mainmenu" title="Категории" > 
+            <div id="mainmenu-title"><div style="color: #ffffff;">Категории</div></div> 
+            <li value="1">  <a href="#"> Продукты питания      </a></li>
+            <li value="2">  <a href="#"> Образование          </a></li>
+            <li value="3">  <a href="#"> Фитнес      </a></li> 
 <!--            <div class="mainmenusub">
                 <li value="18"> <a href="#"> Бытовая техника </a></li>
                 <li value="19"> <a href="#"> Косметика       </a></li>

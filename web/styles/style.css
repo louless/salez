@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 body{
     /*background-color: #f0f7f7;*/
-    /*font-family: Verdana, Arial, sans-serif;*/
+    font-family: Verdana, Arial, sans-serif;
     background-image: url(../images/background.bmp);
 }
 
@@ -34,7 +34,6 @@ a:link:hover {
     text-decoration: underline;
 }
 .center{   
-    margin: 100%;
     padding: 10px;
     margin: auto;
     font-size: 14px;
@@ -77,6 +76,16 @@ h2{
     background-color: #333333;
     border-left: 5px solid #3333FF;
 }
+#mainmenu-title{
+   color: #ffffff; 
+   font-size: 20px;
+   text-align: center;
+   margin: auto;
+   padding: 5px;
+   border-top: 2px solid #f5fb09;
+   border-bottom: 2px solid #f5fb09;
+   font-weight: bold;
+}
 
 /*///////////////////////////////////////////////////////*/
 
@@ -117,8 +126,6 @@ h2{
     margin-top: 0;
     /*list-style-type: none;*/
     background-color: #33ADFF;
-    /*border: 2px solid #0066FF;*/  
-    /* border-radius: 20px 5px; скругленные концы */
 }
 #topmenu li { 
     display: inline; 
