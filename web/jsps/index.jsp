@@ -13,12 +13,57 @@
         <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/style.css" type="text/css"/>
     </head>
     <body>
-        <!--<h1>Лучшие скидки и промо акции в одном месте!</h1>-->
-        <h1>Совсем скоро тут будет новый сайт! Мы уже работаем... </br>
-        По всем вопросам <a href="mailto:lvg135@yandex.ru">lvg135@yandex.ru</a>
-        </h1>
-        <%--<%@include file="../partjsp/mainMenu.jsp"%>--%> 
+        <%@include file="../partjsp/topmenu.jsp" %>
         
+        <div class="center">
+            <h1>Лучшие скидки и промо акции в одном месте!
+            </h1>
+        </div>
+        <%--<%@include file="../partjsp/mainMenu.jsp"%>--%> 
+
+        <div class="mainframe">
+
+            <table>
+                <thead>
+
+                </thead>
+                <tbody>                   
+                    <tr>
+
+                        <td><a href="http://getnet.site" target="_blank">
+                                <img src="./IMG.jpg" width="100%"> </a></td>
+
+                        <td><a href="http://getnet.site" target="_blank">
+                                <img src="./getImage.jpg" width="100%"> </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://getnet.site" target="_blank">
+                                <img src="./getImage.jpg" width="100%"> </a></td>
+                        <td><a href="http://getnet.site" target="_blank">
+                                <img src="./getImage.jpg" width="100%"> </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://getnet.site" target="_blank">
+                                <img src="./getImage.jpg" width="100%"> </a></td>
+                        <td><a href="http://getnet.site" target="_blank" >
+                                <img src="./getImage.jpg" width="100%"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://getnet.site" target="_blank">
+                                <img src="./getImage.jpg" width="100%"></a></td>
+                        <td><a href="http://getnet.site" target="_blank">
+                                <img src="./getImage.jpg" width="100%"></a></td>
+                    </tr>                    
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
         <div class="clear-float"></div>
         <%@include file="../partjsp/bottom.jsp"%> 
     </body>

@@ -9,6 +9,7 @@ and open the template in the editor.
 */
 body{
     background-color: #f0f7f7;
+
 }
 
 th {
@@ -37,6 +38,10 @@ a:link:hover {
     margin: auto;
     font-size: 14px;
     text-align: center;
+}
+
+h1{
+    font-size: 30px;
 }
 
 /* ///////////////////////////////////////////////////////
@@ -79,4 +84,60 @@ a:link:hover {
 .clear-float{
     clear: both;
 }
+
+/*ссылки на рекламные продукты будут размещаться в два столбца в таблице*/
+.mainframe {
+    width: 70%;
+    border-style: double;
+    margin: auto;
+    text-align: center;   
+}
+.mainframe table{
+    margin: 0 auto;
+}
+.mainframe table td{
+    padding: 0;
+    width: 5%;
+    height: 300px;
+    border-style: double; 
+    background-color: black;
+}
+
+
+/* ///////////////////////////////////////////////////////
+  настройки верхнего горизонтального меню*/
+#topmenu {
+    padding: 0;
+    margin-top: 0;
+    /*list-style-type: none;*/
+    background-color: #33ADFF;
+    /*border: 2px solid #0066FF;*/  
+    /* border-radius: 20px 5px; скругленные концы */
+}
+#topmenu li { 
+    display: inline; 
+}
+#topmenu a{
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+} 
+#topmenu a:hover {
+    border-radius: 20px 5px;
+    background-color: #0066FF;
+}
+
+/*//////////////////////////////////////////////////////////////////*/
+.right{
+    width: max-content;
+    float:right;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
+
 
