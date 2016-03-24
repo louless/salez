@@ -12,7 +12,7 @@
     <body> 
     <!--<script type="text/javascript" src="${pageContext.request.contextPath}/lib/jquery.js"></script>-->  
         <ul id="mainmenu" title="Категории" > 
-            <div id="mainmenu-title"><div style="color: #ffffff;">Категории</div></div> 
+            <div id="mainmenu-title">Категории</div> 
             <li value="1">  <a href="#"> Продукты питания      </a></li>
             <li value="2">  <a href="#"> Образование          </a></li>
             <li value="3">  <a href="#"> Фитнес      </a></li> 
