@@ -54,7 +54,7 @@ h2{
 #mainmenu{
     padding: 0;
     list-style-type: none;
-    width: 13%;
+    width: 15%;
     background-color:  #c0c0c0;
     margin-left: 10px;
     margin-right: auto;
@@ -94,6 +94,14 @@ h2{
    border-top: 2px solid #f5fb09;
    font-weight: bold;
 }
+.mainmenusub{
+    display: none;
+    background-color: #5d5656;
+}
+.mainmenusub a{
+    /*margin-left: 10px;*/  
+    text-align: right;
+}
 
 /*///////////////////////////////////////////////////////*/
 
@@ -109,9 +117,10 @@ h2{
 
 /*ссылки на рекламные продукты будут размещаться в два столбца в таблице*/
 .mainframe {
-    width: 70%;
+    width: 68%;
     border-style: double;
-    margin: auto;
+    margin-left: 17%;
+    margin-right: auto;
     text-align: center;   
 }
 .mainframe table{

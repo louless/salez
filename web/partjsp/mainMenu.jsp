@@ -14,8 +14,14 @@
         <ul id="mainmenu" title="Категории" > 
             <div id="mainmenu-title">Категории</div> 
             <li value="1">  <a href="#"> Продукты питания      </a></li>
+            <div class="mainmenusub">
+                <li value="5"> <a href="#"> Напитки </a></li>
+                <li value="6"> <a href="#"> Еда </a></li>
+            </div>
             <li value="2">  <a href="#"> Образование          </a></li>
             <li value="3">  <a href="#"> Фитнес      </a></li> 
+            <li value="4">  <a href="#"> Искусство     </a></li>
+
 <!--            <div class="mainmenusub">
                 <li value="18"> <a href="#"> Бытовая техника </a></li>
                 <li value="19"> <a href="#"> Косметика       </a></li>
@@ -38,5 +44,6 @@
             <li value="16"> <a href="#"> Новости       </a></li>
             <li value="17"> <a href="#"> Недвижимость  </a></li>  -->
         </ul> 
+        <script type="text/javascript" src="${pageContext.request.contextPath}/js/submenu.js"></script>
     </body>
 </html>
