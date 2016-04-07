@@ -22,9 +22,8 @@
                 Недавно поступившие
             </h2>
         </div>
-        
+        <%@include file="../partjsp/typeSale.html"%>       
         <%@include file="../partjsp/mainMenu.jsp"%> 
-
         <div class="mainframe">
             <table>
                 <thead>

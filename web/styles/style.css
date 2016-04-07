@@ -162,6 +162,24 @@ h2{
     background-color: #0066FF;
 }
 
+/*//////////////////////////////////////////////////////////////////////
+вкладки - типы (скидки, акции, распродажи...)
+*/
+#typeSale{
+    
+}
+#typeSale li{
+    display: inline-block;
+}
+#typeSale a{
+    text-decoration: none;
+    display: inline-block;
+}
+#typeSale a:hover{
+    border-radius: 20px 5px;
+    background-color: #0066FF;    
+}
+
 /*//////////////////////////////////////////////////////////////////*/
 .right{
     width: max-content;
