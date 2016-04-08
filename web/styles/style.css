@@ -83,7 +83,7 @@ h2{
     
 }
 #mainmenu-title{
-    background-color:  #898989; 
+   background-color:  #898989; 
    color: black; 
    font-size: 20px;
    text-align: center;
@@ -165,19 +165,27 @@ h2{
 /*//////////////////////////////////////////////////////////////////////
 вкладки - типы (скидки, акции, распродажи...)
 */
-#typeSale{
-    
+#typeSale{   
+    padding: 0;
+    margin: 0;
+}
+#typeSale ul{
+  width:100%;    
 }
 #typeSale li{
-    display: inline-block;
+    height: 30px;
+    width: 33%;
+    display: inline;
+    text-align: center;  
+    float: left;   
 }
-#typeSale a{
-    text-decoration: none;
-    display: inline-block;
+#typeSale li:hover{
+    background-color: #ffff00;  
 }
-#typeSale a:hover{
-    border-radius: 20px 5px;
-    background-color: #0066FF;    
+#typeSale a{    
+    font-family: Verdana, Arial, sans-serif;
+    font-size: medium;
+    text-decoration: none;  
 }
 
 /*//////////////////////////////////////////////////////////////////*/
