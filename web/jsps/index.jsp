@@ -14,20 +14,22 @@
         <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/style.css" type="text/css"/>
     </head>
     <body>
-        <%@include file="../partjsp/topmenu.jsp" %>
-
-        <div class="center">
-            <h1>Лучшие скидки и промо-акции в одном месте! </h1>
+        <%--<%@include file="../partjsp/topmenu.jsp" %>--%>
+        <div class="title">
+            <div class="center">
+                <h1>Лучшие скидки и промо-акции в одном месте! </h1>
+            </div>
+            <%@include file="../partjsp/typeSale.jsp"%>      
+            
         </div>
-        <%@include file="../partjsp/typeSale.jsp"%>   
         <div class="center">
             <h2> Недавно поступившие </h2>
         </div>
 <!--        <form action="${pageContext.request.contextPath}/partjsp/typeSale.jsp">
             <input type="submit" value="test"/> 
         </form>-->
-        
-    
+
+
         <%@include file="../partjsp/mainMenu.jsp"%> 
         <div class="mainframe">
             <table>
