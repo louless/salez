@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: VGLukin -->
+ 
+<struts>
+    <package name="default" extends="struts-default">   
+        
+        <action name="saleList_Struts" class="GetDataPackage.Actions.GetDataAction" method="getSaleList">
+            <!--<result name="center">/partjsp/center.jsp</result>-->
+        </action>
+    </package>
+</struts>
