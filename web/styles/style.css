@@ -1,7 +1,10 @@
 body{
     /*background-color: #f0f7f7;*/
     font-family: Verdana, Arial, sans-serif;
-    background-image: url(../images/background.bmp);
+    /*background-image: url(../images/background.bmp);*/
+    /*background-image: url(../images/little_pluses.png);*/
+    /*background-image: url(../images/grey_wash_wall.png);*/
+    background-image: url(../images/upfeathers.png);
     margin: 0;    
 }
 
@@ -45,8 +48,8 @@ h2{
 #mainmenu{
     padding: 0;
     list-style-type: none;
-    width: 15%;
-    background-color:  #cb8c1d;
+    width: 13%;
+    background-color:  #d0d0d0;
     margin-left: 10px;
     margin-right: auto;
     float: left;  
@@ -60,7 +63,7 @@ h2{
 #mainmenu a {    
     padding: 5px;
     text-decoration: none;
-    font-weight: bold;
+    /*font-weight: bold;*/
     display: block;
     color: black;
 }
@@ -82,7 +85,7 @@ h2{
 }
 .mainmenusub{
     display: none;
-    background-color: #5d5656;
+    background-color: #a65317;
 }
 .mainmenusub a{
     /*margin-left: 10px;*/  
@@ -90,7 +93,6 @@ h2{
 }
 
 /*///////////////////////////////////////////////////////*/
-
 .clear-float-left{
     clear: left;
 }
@@ -121,14 +123,14 @@ h2{
     border-color: #f5fb09;
 }
 
-
 /* ///////////////////////////////////////////////////////
   настройки верхнего горизонтального меню*/
 #topmenu {
     padding: 0;
     margin-top: 0;
     /*list-style-type: none;*/
-    background-color: #c0c0c0;
+    /*background-color: #c0c0c0;*/
+    
     top:0;
     border: 1px solid black;
 }
@@ -153,18 +155,17 @@ h2{
 */
 #typeSale{   
     padding: 0;
-    margin: 0;   
-}
-#typeSale ul{
-    width:100%;  
+    margin: 0;  
+    width: 100%;
 }
 #typeSale li{
     height: 30px;
-    width: 33%;
-    display: inline;
+    width: 33.33%;
+ 
+    /*display: inline;*/
     text-align: center;  
     float: left;   
-    background-color: #ce0033; 
+    background-color: #4dbbf6; 
 }
 
 #typeSale a{    
@@ -172,11 +173,12 @@ h2{
     font-size: medium;
     text-decoration: none;  
     color: aliceblue;
-    display: block;
+    display: inline-block;
+    height: auto;
 }
 #typeSale li:hover{
     background-color: #cb8c1d;
-    color: #c0c0c0;  
+    color: #c0c0c0;     
 }
 
 /*//////////////////////////////////////////////////////////////////*/
@@ -189,8 +191,27 @@ h2{
 
 .title{
     background-color: #cb8c1d;
+    /*background: url(../images/subtle_orange_emboss.png);*/
     color: aliceblue;
     margin-bottom: 20px;
+}
+
+.bottom{
+    /*background: #242729 none repeat scroll 0 0;*/
+    background-color: #242729;
+    padding: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #b9bdc1;  
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    margin-top: 10px;
+    
+}
+.bottom a{
+    color: #99d4ff;
 }
 
 

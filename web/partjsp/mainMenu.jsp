@@ -44,6 +44,5 @@
             <li value="16"> <a href="#"> Новости       </a></li>
             <li value="17"> <a href="#"> Недвижимость  </a></li>  -->
         </ul> 
-        <script type="text/javascript" src="${pageContext.request.contextPath}/js/submenu.js"></script>
     </body>
 </html>
