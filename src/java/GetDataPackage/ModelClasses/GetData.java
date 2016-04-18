@@ -5,7 +5,7 @@
  */
 package GetDataPackage.ModelClasses;
 
-import UploadPackage.ModelClasses.UploadFileStruts;
+import UploadPackage.ModelClasses.UploadImageStruts;
 import dbPackage.WorkDB;
 import java.io.File;
 import java.sql.ResultSet;
@@ -26,7 +26,7 @@ public class GetData {
 
     public String getSalesDB(HttpServletRequest request) {
         String result = "";
-        String directory = UploadFileStruts.fullFilesPath;//request.getContextPath() + File.separator + UploadFileStruts.filesPath;
+        String directory = UploadImageStruts.fullFilesPath;//request.getContextPath() + File.separator + UploadImageStruts.filesPath;
         sales = new ArrayList();
         try {   
             rs = WorkDB.getInstance().SimpleQuery("SELECT idsite, url, namesite FROM sitelist where isactive = 1 and idrubric = " + idrubric);

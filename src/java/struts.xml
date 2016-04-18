@@ -10,5 +10,18 @@
         <action name="saleList_Struts" class="GetDataPackage.Actions.GetDataAction" method="getSaleList">
             <!--<result name="center">/partjsp/center.jsp</result>-->
         </action>
+        
+        <action name="addsale">
+            <result>/jsps/addSale.jsp</result>
+        </action>
+        
+        <action name="insertNewForm" class="UploadPackage.Actions.InsertNewAction">
+            <result name="add">/jsps/addSale.jsp</result>  
+ 
+            <interceptor-ref name="defaultStack">
+                <param name="fileUpload.maximumSize">10485760</param>
+                <param name="fileUpload.allowedTypes">text/plain,image/jpeg</param>
+            </interceptor-ref>
+        </action> 
     </package>
 </struts>

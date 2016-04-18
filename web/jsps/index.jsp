@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,6 +26,9 @@
             <h2> Недавно поступившие </h2>
         </div>
 
+    <s:form action="addsale">
+        <s:submit value="Добавить"/>
+    </s:form>
         <%@include file="../partjsp/mainMenu.jsp"%> 
         <div class="mainframe">
             <table>

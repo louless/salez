@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
  *
  * @author VGLukin
  */
-public class UploadFileStruts {
+public class UploadImageStruts {
     
     public static String filesPath = "icons";
     public static String fullFilesPath = "/home/glassfish/icons";

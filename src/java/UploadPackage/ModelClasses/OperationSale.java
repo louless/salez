@@ -17,17 +17,22 @@ import javax.servlet.http.HttpServletRequest;
 
 
 /**
+ * РАбота с элементами сайта:
+ * - добавление
+ * - удаление
+ * - изменение
+ * скидки, распродажи и т.д.
  * вставка нового элемента в базу
- *
+ * 
  * @author VGLukin
  */
-public class OperationSite {
+public class OperationSale {
 
     private int idRubric;
     private String url;
-    private String siteName;
+    private String saleName;
     private File file;
-    private String idSite;
+    private String idSale;
 
     /**
      * вставка нового сайта
@@ -35,12 +40,12 @@ public class OperationSite {
      * @param request
      * @return result insert
      */
-    public String insertSite(HttpServletRequest request) {
+    public String insertSale(HttpServletRequest request) {
         String result = "";
         String result1 = "";
         String result2 = "";
         result1 = saveToDB();
-        if (idSite == null) {
+        if (idSale == null) {
             result = "file name is null";
             return result;
         }
@@ -60,12 +65,12 @@ public class OperationSite {
     private String saveToDB() {
         try {
             WorkDB.getInstance().setQuery(
-                    "insert into sitelist (idrubric, url, namesite) values (?, ?, ?)");
+                    "insert into salelist (idrubric, url, namesale) values (?, ?, ?)");
             WorkDB.getInstance().getPstmt().setInt(1, idRubric);
             WorkDB.getInstance().getPstmt().setString(2, url);
-            System.out.println(siteName);
+            System.out.println(saleName);
             try {
-                WorkDB.getInstance().getPstmt().setBytes(3, siteName.getBytes("cp1251"));
+                WorkDB.getInstance().getPstmt().setBytes(3, saleName.getBytes("cp1251"));
             } catch (UnsupportedEncodingException e) {
                 System.out.println(e.getMessage());
                 return e.getMessage();
@@ -74,7 +79,7 @@ public class OperationSite {
 
             try (ResultSet rs = WorkDB.getInstance().SimpleQuery("SELECT LAST_INSERT_ID()")) {
                 while (rs.next()) {
-                    idSite = rs.getString(1);
+                    idSale = rs.getString(1);
                 }
             }
         } catch (SQLException e) {
@@ -92,9 +97,9 @@ public class OperationSite {
      */
     private String saveIcon(HttpServletRequest request, File file) {
         String result = "";
-        UploadFileStruts uploadFile = new UploadFileStruts();
+        UploadImageStruts uploadFile = new UploadImageStruts();
         try {
-            result = uploadFile.load(request, file, idSite);
+            result = uploadFile.load(request, file, idSale);
         } catch (IOException e) {
             return result;
         }
@@ -102,31 +107,32 @@ public class OperationSite {
         return result;
     }
 
+    
     public String DelSite() {
         String result = "";
-        int id;
-        try {
-            id = Integer.parseInt(idSite);
-        } catch (NumberFormatException nfe) {
-            id = 0;
-        }
-
-        if (id == 0) {
-            result = "Error while parse idSite = " + idSite;
-            return result;
-        }
-        
-        try {
-            WorkDB.getInstance().setQuery("update sitelist set isactive = 0 where idsite = " + idSite);
-            WorkDB.getInstance().PrepareQueryExe();
-            
-        } catch (SQLException ex) {
-            Logger.getLogger(OperationSite.class.getName()).log(Level.SEVERE, null, ex);            
-            System.out.println(ex.getMessage());
-            result = ex.getMessage();
-            return result;
-        }
-
+//        int id;
+//        try {
+//            id = Integer.parseInt(idSale);
+//        } catch (NumberFormatException nfe) {
+//            id = 0;
+//        }
+//
+//        if (id == 0) {
+//            result = "Error while parse idSite = " + idSite;
+//            return result;
+//        }
+//        
+//        try {
+//            WorkDB.getInstance().setQuery("update sitelist set isactive = 0 where idsite = " + idSite);
+//            WorkDB.getInstance().PrepareQueryExe();
+//            
+//        } catch (SQLException ex) {
+//            Logger.getLogger(OperationSite.class.getName()).log(Level.SEVERE, null, ex);            
+//            System.out.println(ex.getMessage());
+//            result = ex.getMessage();
+//            return result;
+//        }
+//
         return result;
     }
 
@@ -146,12 +152,12 @@ public class OperationSite {
         this.url = url;
     }
 
-    public String getSiteName() {
-        return siteName;
+    public String getSaleName() {
+        return saleName;
     }
 
-    public void setSiteName(String siteName) {
-        this.siteName = siteName;
+    public void setSaleName(String siteName) {
+        this.saleName = saleName;
     }
 
     public File getFile() {
@@ -162,14 +168,11 @@ public class OperationSite {
         this.file = file;
     }
 
-    public String getIdSite() {
-        return idSite;
+    public String getIdSale() {
+        return idSale;
     }
 
-    public void setIdSite(String idSite) {
-        this.idSite = idSite;
-    }
-    
-    
-
+    public void setIdSale(String idSale) {
+        this.idSale = idSale;
+    }        
 }

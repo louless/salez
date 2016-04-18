@@ -5,7 +5,7 @@
  */
 package UploadPackage.Actions;
 
-import UploadPackage.ModelClasses.OperationSite;
+import UploadPackage.ModelClasses.OperationSale;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import javax.servlet.http.HttpServletRequest;
@@ -15,11 +15,11 @@ import org.apache.struts2.interceptor.ServletRequestAware;
  *
  * @author VGLukin
  */
-public class InsertNewAction extends ActionSupport implements ModelDriven<OperationSite>, ServletRequestAware {
+public class InsertNewAction extends ActionSupport implements ModelDriven<OperationSale>, ServletRequestAware {
 
     HttpServletRequest request;
-    private final OperationSite operSite = new OperationSite();
-    public static final String ADMIN = "admin";
+    private final OperationSale operSite = new OperationSale();
+    public static final String ADDSALE = "add";
     String result;
 
     /**
@@ -34,20 +34,20 @@ public class InsertNewAction extends ActionSupport implements ModelDriven<Operat
 
         System.out.println("idRubric=" + request.getParameter("idRubric"));
         System.out.println("url=" + request.getParameter("url"));
-        System.out.println("Site name=" + request.getParameter("siteName"));       
-        result = operSite.insertSite(request);
-        return ADMIN;
+        System.out.println("Site name=" + request.getParameter("saleName"));       
+        result = operSite.insertSale(request);
+        return ADDSALE;
     }
 
-    public String doDelSite(){
-        System.out.println("id site =" + request.getParameter("idSite"));    
-        result = operSite.DelSite();
-              
-        return ADMIN;
-    }
+//    public String doDelSite(){
+//        System.out.println("id site =" + request.getParameter("idSite"));    
+//        result = operSite.DelSite();
+//              
+//        return ADMIN;
+//    }
     
     @Override
-    public OperationSite getModel() {
+    public OperationSale getModel() {
         return operSite;
     }
 
