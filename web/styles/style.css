@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     /*background-color: #f0f7f7;*/
     font-family: Verdana, Arial, sans-serif;
@@ -5,7 +15,10 @@ body{
     /*background-image: url(../images/little_pluses.png);*/
     /*background-image: url(../images/grey_wash_wall.png);*/
     background-image: url(../images/upfeathers.png);
-    margin: 0;    
+    margin: 0;   
+    height: 100%;
+    padding: 0;
+    min-height: 100%;
 }
 
 th {
@@ -38,7 +51,7 @@ a:link:hover {
     margin: auto;
     width: 50%;
     text-align: left;
-    
+
 }
 
 h1{
@@ -78,16 +91,16 @@ h2{
     color: #c0c0c0;  
 }
 #mainmenu-title{
-   background-color:  #cb8c1d; 
-   color: black; 
-   font-size: 20px;
-   text-align: center;
-   margin: auto;
-   padding: 5px;
-   border-left: 5px solid black;
-   /*border-right: 2px solid #f5fb09;*/
-   border-top: 2px solid #f5fb09;
-   font-weight: bold;
+    background-color:  #cb8c1d; 
+    color: black; 
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    border-left: 5px solid black;
+    /*border-right: 2px solid #f5fb09;*/
+    border-top: 2px solid #f5fb09;
+    font-weight: bold;
 }
 .mainmenusub{
     display: none;
@@ -136,7 +149,7 @@ h2{
     margin-top: 0;
     /*list-style-type: none;*/
     /*background-color: #c0c0c0;*/
-    
+
     top:0;
     border: 1px solid black;
 }
@@ -167,7 +180,7 @@ h2{
 #typeSale li{
     height: 30px;
     width: 33.33%;
- 
+
     display: inline;
     text-align: center;  
     float: left;   
@@ -203,8 +216,7 @@ h2{
 }
 
 .bottom{
-    background: #242729 none repeat scroll 0 0;
-    /*background-color: #242729;*/
+    background-color: #242729;
     padding: 6px;
     font-size: 14px;
     line-height: 1.5;
@@ -212,12 +224,28 @@ h2{
     text-align: center;
     width: 100%;
     bottom: 0;
+    
+    /*margin-top: 10px;*/
     position: relative;
-    margin-top: 10px;
+margin-top:-100px;    
 }
 .bottom a{
     color: #99d4ff;
 }
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    position:relative;
+}
+
+.bottom, .empty {
+    height: 100px;
+}
+
+
 
 
 

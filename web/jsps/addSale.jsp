@@ -20,8 +20,7 @@
         <!--</div>-->
          
         <div class="center">
-            <s:form name="insertNew" action="insertNewForm" enctype="multipart/form-data" method="post">                   
-               
+            <s:form name="insertNew" action="insertNewForm" enctype="multipart/form-data" method="post">                                  
                 <table>
                     <tbody>
                         <tr>
@@ -30,13 +29,13 @@
                                 <select key="idRubric" name="idRubric" id="Rubric" required>
                                     <c:forEach var="row" items="${rubrics.rows}" >
                                         <option 
-                                    <c:if test="${param.idRubric == row.idRubric}" > 
+                                        <c:if test="${param.idRubric == row.idRubric}" > 
                                         selected
-                                    </c:if>
-                                    value="${row.idRubric}">${row.rubricName}
-                                    </option>
-                                </c:forEach>
-                            </select>  
+                                        </c:if>
+                                        value="${row.idRubric}">${row.rubricName}
+                                        </option>
+                                    </c:forEach>
+                                </select>  
                             </td>  
                         </tr>
                     <tr>  <td><s:textfield label="Ссылка" key="url"/>  </td> </tr>
@@ -56,9 +55,7 @@
                 
                 </tr>
                 </tbody>                
-            </table>  
-        
-                   
+            </table>                             
         </s:form>              
     </div>
  

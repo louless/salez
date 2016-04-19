@@ -83,7 +83,7 @@ public class UploadImageStruts {
         try {
             originalImage = ImageIO.read(file);
 
-            int width = 200;
+            int width = 400;
             double k = (double)width / (double)originalImage.getWidth();
             int height = (int) originalImage.getHeight();
             height = (int) Math.round(k * height);
