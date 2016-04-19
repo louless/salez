@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/style.css" type="text/css"/>
     </head>
     <body>
-    <div class="wrapper">
+
         <%@include file="../partjsp/topmenu.jsp" %>
         <div class="title">
             <div class="center">
@@ -74,8 +74,6 @@
 
 
         <div class="clear-float"></div>
-    </div>
-    <div class="empty"></div>
 
         <%@include file="../partjsp/bottom.jsp"%>     
 
