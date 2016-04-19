@@ -49,9 +49,8 @@ a:link:hover {
 }
 .center table{
     margin: auto;
-    width: 50%;
+    width: 30%;
     text-align: left;
-
 }
 
 h1{
@@ -216,12 +215,13 @@ h2{
 }
 
 .bottom{
-    background-color: #242729;
+    /*background-color: #242729;*/
+    background-color: #697780;
     padding-top: 10px; 
     margin-top: 10px;
     font-size: 14px;
     line-height: 1.5;
-    color: #b9bdc1;  
+    color: #ededed; /*#b9bdc1;*/  
     text-align: center;   
     width: 100%;
     /*position: absolute;*/
@@ -230,14 +230,14 @@ h2{
     color: #99d4ff;
 }
 .bottom, .empty {
-    height: 130px;
+    height: 115px;
 }
 
 .wrapper {
   min-height: 100%;
   height: auto;
   height: 100%;
-  margin: 0 auto -150px;
+  margin: 0 auto -135px;
 }
 
 
